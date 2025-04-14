@@ -59,9 +59,9 @@ const Signup = () => {
       return
     }
 
-    const result = await signup(formData, role)
+    const result = true;
 
-    if (result.success) {
+    if (result) {
       navigate(`/dashboard/${role}`)
     } else {
       setError(result.error || "Failed to sign up")
